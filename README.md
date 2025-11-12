@@ -16,7 +16,7 @@ Contact Form: Lets visitors easily reach out (integrated via EmailJS or backend)
 
 Animations: Smooth transitions and hover effects for better interactivity.
 
-Tech Stack
+TECH STACK
 
 Frontend:
 
