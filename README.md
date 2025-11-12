@@ -1,8 +1,8 @@
-Personal Portfolio Website (Richard Amofa __ Software Engineer)
+PERSONAL PORTFOLIO WEBSITE (Richard Amofa __ Software Engineer)
 
 A modern, responsive portfolio website built to showcase my projects, skills, and professional background. Designed with clean aesthetics, smooth interactions, and mobile-first responsiveness.
 
-Features
+FEATURES
 
 Responsive Design: Fully optimized for mobile, tablet, and desktop.
 
@@ -30,14 +30,14 @@ Optional Integrations:
 
 GitHub Pages / Netlify (hosting)
 
-📁 Folder Structure
+FOLDER STRUCTURE
 My portfolio/ personal/
 |
 ├── index.html (inline css and js)
 ├── /images
 └── README.md
 
-⚙️ Setup
+SETUP
 
 Clone the repo:
 
@@ -63,7 +63,7 @@ Include downloadable résumé.
 
 Improve SEO and accessibility.
 
-Contact
+CONTACT
 
 Portfolio: ###
 
