@@ -107,3 +107,20 @@
     updateActiveByScroll();
 
     document.getElementById('year').textContent = new Date().getFullYear();
+
+        
+  emailjs.init("YOUR_PUBLIC_KEY");
+
+  document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    emailjs.sendForm(
+      "YOUR_SERVICE_ID",
+      "YOUR_TEMPLATE_ID",
+      this
+    ).then(() => {
+      alert("Message sent successfully!");
+    }, (error) => {
+      alert("Failed to send message");
+    });
+  });
