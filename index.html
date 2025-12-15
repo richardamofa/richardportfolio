@@ -323,7 +323,9 @@
       </div>
 
       <div class="contact-grid">
-        <form class="contact-form" id="contact-form" onsubmit="event.preventDefault(); alert('Thanks — message sent (demo).');">
+        <form class="contact-form" id="contact-form" 
+        onsubmit="event.preventDefault(); alert('Thanks — message sent (demo).');" 
+        method="post" action="https://formspree.io/f/myzrvvyz">
           <div class="field">
             <label for="name">Name</label>
             <input id="name" required placeholder="Your name" />
