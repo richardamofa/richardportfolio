@@ -36,6 +36,11 @@
       </div>
 
       <div class="nav-right">
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
         <nav>
           <ul class="nav-links">
             <li><a class="nav-link" href="#home">Home</a></li>
@@ -46,7 +51,6 @@
             <li><a class="nav-link" href="#testimonials">Testimonials</a></li>
             <li><a class="nav-link" href="#contact">Contact</a></li>
           </ul>
-            <div class="ham-menu">☰</div>
         </nav>
 
         <a class="cta" href="mailto:richard.software@gmail.com">Email</a>
@@ -327,8 +331,7 @@
 
       <div class="contact-grid">
         <form class="contact-form" id="contact-form" 
-        onsubmit="event.preventDefault(); alert('Thanks — message sent (demo).');" 
-        method="post" action="https://formspree.io/f/myzrvvyz">
+        method="post" action="">
           <div class="field">
             <label for="name">Name</label>
             <input id="name" required placeholder="Your name" />

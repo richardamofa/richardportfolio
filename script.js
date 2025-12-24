@@ -1,10 +1,11 @@
 
 /* JavaScript */
-    const hamMenu = document.querySelector('.ham-menu');
-    const navBar = document.querySelector('.navlinks');
+    const hamburger = document.querySelector(".hamburger");
+    const nav = document.querySelector(".nav-links");
 
-    hamMenu.addEventListener('click', () => {
-      navBar.classList.toggle('active');
+    hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("open");
+      nav.classList.toggle("active");
     });
 
 

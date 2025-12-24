@@ -143,15 +143,31 @@
       box-shadow: var(--glass-glow);
     }
 
-    .ham-menu {
-      font-size: 1.32rem;
-      display: none;
-      flex-direction: column;
-      justify-content: space-between;
-      width: 25px;
-      height: 18px;
-      cursor: pointer;
-      z-index: 1101;
+    .hamburger {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+        gap: 5px;
+        transition: all 0.3s ease;
+    }
+
+    .hamburger span {
+        width: 28px;
+        height: 2px;
+        background: #ffffff;
+        transition: 0.3s ease;
+    }
+
+    .hamburger.open span:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .hamburger.open span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.open span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
     }
 
     .wrap {
@@ -620,7 +636,7 @@
         height: 100vh;
         padding: 4rem 1.5rem;
         box-shadow: -5px 0 15px var(--glass-shadow);
-        transition: right .3s ease;
+        transition: linear .5s ease;
         z-index: 100;
       }
 
@@ -628,12 +644,24 @@
         right: 0;
       }
 
-      .ham-menu {
-        display: block;
+      .nav-links {
         position: absolute;
-        top: 1.2rem;
-        right: 2rem;
-        z-index: 101;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+        display: none;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .hamburger {
+        display: flex;
       }
 
       .hero {
