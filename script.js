@@ -107,7 +107,8 @@
     window.addEventListener('scroll', updateActiveByScroll, {passive:true});
     updateActiveByScroll();
 
-    document.getElementById('year').textContent = new Date().getFullYear();
+    //getFullyear copy right 2025
+    //document.getElementById('year').textContent = new Date().getFullYear();
 
         
   emailjs.init("YOUR_PUBLIC_KEY");

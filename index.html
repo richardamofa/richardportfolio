@@ -30,7 +30,7 @@
       <div class="brand">
         <div class="logo">R</div>
         <div>
-          <div style="font-size:.85rem;">RICHIE</div>
+          <div style="font-size:.85rem;">Richie</div>
           <div style="font-size:.75rem;color:var(--muted)">Richard Amofa — Software Engineer</div>
         </div>
       </div>
@@ -60,12 +60,12 @@
 
   <main class="wrap">
 
-    <!-- HERO / HOME -->
+    <!-- HERO -->
     <section id="home" class="hero reveal">
       <div class="hero-card">
-        <div class="kicker">Full-Stack • Web Design • Mobile</div>
+        <div class="kicker">• Full Stack Developer</div>
         <h1>Hi ! I’m <span style="color:var(--accent-1)">Richard Amofa</span></h1>
-        <div class="headline-sub">making life much easier with every line of code!</div>
+        <div class="headline-sub">solving problems with codes!</div>
 
         <p class="intro">
           <span class="typed" id="typed-target"></span>
@@ -112,7 +112,10 @@
       <div class="card" style="display:flex;gap:16px;align-items:flex-start;">
         <div style="flex:1">
           <h3 style="margin-top:0">A bit about me</h3>
-          <p class="muted">I’m a Full-Stack engineer building responsive web apps, mobile experiences, and backend APIs. I enjoy systems that scale, clean UX, and automating workflows — from CI/CD pipelines to production monitoring.</p>
+          <p class="muted">I’m a Software Engineer building responsive web apps, mobile experiences, and backend APIs. 
+            I enjoy systems that scale, clean UX, and automating workflows
+            — from CI/CD pipelines to production monitoring.
+          </p>
 
           <ul style="margin-top:12px;color:var(--muted)">
             <li>Technologies: React, JavaScript, C++, Php, MySQL, Figma, Git</li>
@@ -150,7 +153,6 @@
             <div class="skill-pill">Python</div>
             <div class="skill-pill">Php</div>
             <div class="skill-pill">Figma</div>
-            <div class="skill-pill">DjangoDB</div>
             <div class="skill-pill">Git & GitHub</div>
           </div>
 
@@ -205,15 +207,6 @@
       </div>
 
       <div class="timeline">
-        <div class="timeline-item card">
-          <div class="dot"></div>
-          <div>
-            <h4>Software Engineer — Seek Jobs</h4>
-            <div class="muted">2023 — Present</div>
-            <p>.</p>
-          </div>
-        </div>
-
         <div class="timeline-item card">
           <div class="dot"></div>
           <div>
@@ -330,21 +323,27 @@
       </div>
 
       <div class="contact-grid">
-        <form class="contact-form" id="contact-form" 
-        method="post" action="">
+       <form class="contact-form"
+              name="contact"
+              method="POST" 
+              data-netlify="true">
+
+          <!-- Required hidden input for netlify to receive inputs -->
+          <input type="hidden" name="form-name" value="contact">
+
           <div class="field">
             <label for="name">Name</label>
-            <input id="name" required placeholder="Your name" />
+            <input id="name" name="name" required placeholder="Your name" />
           </div>
 
           <div class="field">
             <label for="email">Email</label>
-            <input id="email" type="email" required placeholder="youremail@sample.com" />
+            <input id="email" name="email" type="email" required placeholder="username@mailsample.com" />
           </div>
 
           <div class="field">
             <label for="message">Message</label>
-            <textarea id="message" required placeholder="Tell me about your project…"></textarea>
+            <textarea id="message" name="message" required placeholder="Tell me about your project…"></textarea>
           </div>
 
           <div style="display:flex;gap:8px">
@@ -352,6 +351,7 @@
             <a class="btn" href="mailto:richard.software@gmail.com">Email directly</a>
           </div>
         </form>
+
 
         <aside class="contact-side card">
           <h4 style="margin:0 0 6px">Prefer to connect?</h4>
@@ -370,7 +370,7 @@
     </section>
 
     <footer>
-      © <span id="year"></span> Richard Amofa — WWJD · <span class="muted">Accra, Ghana</span>
+      © <span id="year">2025</span> Richard Amofa — WWJD · <span class="muted">Accra, Ghana</span>
     </footer>
   </main>
 
