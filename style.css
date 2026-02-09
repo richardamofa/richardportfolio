@@ -691,20 +691,17 @@
       color: var(--muted);
       font-size: 0.9rem;
     }
+
     ::-webkit-scrollbar {
       width: 10px;
+      height: 10px;
     }
 
     ::-webkit-scrollbar-track {
-      background: transparent;
+      background: var(--bg);
     }
 
     ::-webkit-scrollbar-thumb {
-      background: linear-gradient(180deg, var(--accent-2), var(--accent-1));
+      background: var(--accent-2);
       border-radius: 999px;
-      transition: background 0.3s ease;
-    }
-
-    ::-webkit-scrollbar-thumb:hover {
-      background: linear-gradient(180deg, var(--accent-1), var(--accent-2));
     }
